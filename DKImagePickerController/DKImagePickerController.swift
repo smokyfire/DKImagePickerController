@@ -302,9 +302,7 @@ open class DKImagePickerController: UINavigationController, DKBaseManagerObserve
         if self.inline {
             exportBlock()
         } else {
-            self.presentingViewController?.dismiss(animated: true, completion: {
-                exportBlock()
-            })
+            exportBlock()
         }
     }
     
